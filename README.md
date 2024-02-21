@@ -18,13 +18,20 @@ tar -zxvf openssl-3.2.1.tar.gz -C/opt
 
 5.再cd 进   cd /opt/openssl-3.2.1/文件夹里
 cd /opt/openssl-3.2.1/
+
 ./config
+
+
 make
+
+
 make install
 
 6.共享
 echo "/usr/local/lib64" >/etc/ld.so.conf.d/openssl.conf
+
 ldconfig
+
 openssl version
 
 7.下载python
@@ -39,12 +46,18 @@ tar -zxvf Python-3.10.2.tgz
 cd /usr/local/Python-3.10.2
 配置编译
 ./configure --prefix=/usr/local/python310
+
+
 make
+
+
 make install
 
 10.准备环境变量软链接
 export PYTHON_HOME=/usr/local/python310
+
 export PATH=$PATH:$PYTHON_HOME/bin
+
 source /etc/profile
 
 cd /usr/local/python310/bin
@@ -52,9 +65,11 @@ cd /usr/local/python310/bin
 
 软链接
 ln -s /usr/local/python310/bin/python3.10  /usr/bin/python3
+
 ln -s /usr/local/python310/bin/pip3.10  /usr/bin/pip3
 
 cd ~
+
 python3
 
 完成python3编译
