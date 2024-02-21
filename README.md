@@ -1,11 +1,14 @@
 # centos-wxbot
-# 1.先装依赖，查看openssl版本，小于3直接删掉 sudo yum remove openssl
-# 2.官网下载openssL  https://www.openssl.org/source/index.html
-# 下载好后，拖到/opt/文件夹里
-# 3.安装依赖：
-# sudo yum -y install gcc perl-IPC-Cmd
-# yum install zlib* -y
+1.先装依赖，查看openssl版本，小于3直接删掉 sudo yum remove openssl
+
+2.官网下载openssL  https://www.openssl.org/source/index.html
+下载好后，拖到/opt/文件夹里
+
+3.安装依赖：
+sudo yum -y install gcc perl-IPC-Cmd
+yum install zlib* -y
 yum install libffi-devel -y
+
 4.cd 到openssl 文件夹
 cd /opt/
 解压
@@ -24,8 +27,8 @@ openssl version
 
 7.下载python
 wget https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tgz
-8.移动路径
 
+8.移动路径
 mv Python-3.10.2 /usr/local/
 解压
 tar -zxvf Python-3.10.2.tgz
