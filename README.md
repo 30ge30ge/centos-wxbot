@@ -75,7 +75,9 @@ python3
 完成python3编译
 
 #部署机器人
+
 11.先安装git
+
 sudo yum install git
 
 12.clone
