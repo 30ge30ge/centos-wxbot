@@ -6,7 +6,9 @@
 
 3.安装依赖：
 sudo yum -y install gcc perl-IPC-Cmd
+
 yum install zlib* -y
+
 yum install libffi-devel -y
 
 4.cd 到openssl 文件夹
