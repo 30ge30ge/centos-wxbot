@@ -88,6 +88,7 @@ cd chatgpt-on-wechat/
 
 14.安装依赖
 pip3 install -r requirements.txt
+
 pip3 install -r requirements-optional.txt
 
 15.更改json文件
