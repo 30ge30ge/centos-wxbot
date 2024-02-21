@@ -35,16 +35,22 @@ ldconfig
 openssl version
 
 7.下载python
+
 wget https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tgz
 
 8.移动路径
+
 mv Python-3.10.2 /usr/local/
 解压
+
 tar -zxvf Python-3.10.2.tgz
 
 9.cd 到解压文件夹
+
 cd /usr/local/Python-3.10.2
+
 配置编译
+
 ./configure --prefix=/usr/local/python310
 
 
@@ -81,19 +87,24 @@ python3
 sudo yum install git
 
 12.clone
+
 git clone https://github.com/zhayujie/chatgpt-on-wechat
 
 13.cd到文件夹里
+
 cd chatgpt-on-wechat/
 
 14.安装依赖
+
 pip3 install -r requirements.txt
 
 pip3 install -r requirements-optional.txt
 
 15.更改json文件
+
 cp config-template.json config.json
 
 16.运行
+
 touch nohup.out
 nohup python3 app.py & tail -f nohup.out
