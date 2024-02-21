@@ -1,10 +1,10 @@
 # centos-wxbot
-1.先装依赖，查看openssl版本，小于3直接删掉 sudo yum remove openssl
-2.官网下载openssL  https://www.openssl.org/source/index.html
-下载好后，拖到/opt/文件夹里
-3.安装依赖：
-sudo yum -y install gcc perl-IPC-Cmd
-yum install zlib* -y
+# 1.先装依赖，查看openssl版本，小于3直接删掉 sudo yum remove openssl
+# 2.官网下载openssL  https://www.openssl.org/source/index.html
+# 下载好后，拖到/opt/文件夹里
+# 3.安装依赖：
+# sudo yum -y install gcc perl-IPC-Cmd
+# yum install zlib* -y
 yum install libffi-devel -y
 4.cd 到openssl 文件夹
 cd /opt/
